@@ -1,8 +1,10 @@
+from sys import stdin
+
 N = int(input())
 
 stack = []
 for _ in range(N):
-    s = input().split()
+    s = stdin.readline().split()
 
     match s[0]:
         case "push":
